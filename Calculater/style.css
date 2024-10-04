@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #181818;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    width: 300px;
+    background: #333333;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.display {
+    background: #222222;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.display input {
+    width: 100%;
+    background: #222222;
+    border: none;
+    color: #00FF41; /* Green text like in the image */
+    font-size: 2em;
+    text-align: right;
+    outline: none;
+    padding-right: 10px;
+    font-family: 'Courier New', monospace; /* Updated font for better symbol support */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    border: none;
+    font-size: 1.2em;
+    padding: 20px;
+    background: #4D4D4D;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 50%; /* Circular button styling */
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.2); /* Shadow for button depth */
+}
+
+button:active {
+    background: #3D3D3D;
+}
+
+button.operation {
+    background: #FF9500;
+}
+
+button.operation:hover {
+    background: #FFB74D;
+}
+
+button.zero {
+    grid-column: span 2; /* Make '0' button span 2 columns */
+    border-radius: 30px; /* Rectangular shape for '0' button */
+}
+
+button.equals {
+    background: #FF9500;
+}
+
+button.equals:hover {
+    background: #FFB74D;
+}
